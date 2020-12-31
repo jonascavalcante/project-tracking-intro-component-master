@@ -33,14 +33,17 @@ header{
     display: block;
 }
 
+.menu{
+    display: none;
+    outline: none;
+    border: none;
+}
+
 nav{
     display: flex;
     gap: 30px;
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 700;
-}
-.menu{
-    display: none;
 }
 li{
     list-style: none;
@@ -141,6 +144,10 @@ h1{
         padding: 20px;
     }
 
+    .menu{
+        display: block;
+    }
+
     nav{
         display: none;
         position: absolute;
@@ -157,20 +164,6 @@ h1{
     }
     hr{
         display: block;
-    }
-
-    .menu{
-        display: block;
-    }
-
-    .disable{
-        display: none;
-    }
-    .active{
-        display: block;
-    }
-    .menu-opened{
-        display: flex;
     }
     
     .menu:hover{
