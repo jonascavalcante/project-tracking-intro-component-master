@@ -35,8 +35,6 @@ header{
 
 .menu{
     display: none;
-    outline: none;
-    border: none;
 }
 
 nav{
@@ -146,6 +144,14 @@ h1{
 
     .menu{
         display: block;
+        width: 32px;
+        height: 32px;
+        outline: none;
+        border: none;
+        background-color: transparent;
+    }
+    .open{
+        width: 100%;
     }
 
     nav{
