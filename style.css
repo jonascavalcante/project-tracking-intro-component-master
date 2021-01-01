@@ -2,12 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    transition: 0.5s;
 }
 
 .background{
     width: 50%;
-    height: 50%;
+    height: calc(50% + 27px);
     border-radius: 0 0 0 50px;
     position: absolute;
     right: 0;
@@ -22,7 +21,7 @@ header{
 
 .container{
     width: 100%;
-    padding: 30px 60px;
+    padding: 64px 165px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -39,7 +38,7 @@ header{
 
 nav{
     display: flex;
-    gap: 30px;
+    gap: 42px;
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 700;
 }
@@ -67,6 +66,7 @@ main{
     max-width: 1440px;
     margin: auto;
     display: flex;
+    padding-top: 98px;
 }
 
 .w-50{
@@ -74,35 +74,45 @@ main{
     flex-direction: column;
     justify-content: center;
     width: 50%;
-    height: 70vh;
-    margin-top: 60px;
-    padding-left: 60px;
+    height: 366px;
+    padding-left: 165px;
     font-family: 'Barlow Condensed', sans-serif;
 }
 
 p{
+    display: flex;
+    align-items: center;
+    height: 25px;
     letter-spacing: 1px;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     color: hsl(231, 7%, 65%);
 }
 
 span{
     margin-right: 13px;
-    padding: 3px 13px;
+    padding: 3px 10px;
     border-radius: 15px;
     font-weight: 700;
     color: white;
     background-color: hsl(230, 29%, 20%);
 }
 
+.h1{
+    margin-top: 29px;
+}
+.h11{
+    margin-top: 10px;
+}
 h1{
-    margin: 30px 0;
     font-size: 60px;
+    line-height: 80%;
     color: hsl(230, 29%, 20%);
 }
 
 .message{
+    height: 43px;
+    margin-top: 45px;
     letter-spacing: normal;
     font-size: 20px;
 }
@@ -111,7 +121,7 @@ h1{
     display: flex;
     align-items: center;
     gap: 20px;
-    margin-top: 60px;
+    margin-top: 66px;
 }
 .call-to-action a{
     padding: 15px 25px;
@@ -127,25 +137,34 @@ h1{
 
 .illustration{
     width: 50%;
-    height: 70vh;
-    margin-top: 60px;
+    height: 455px;
     background-image: url(images/illustration-devices.svg);
     background-size: cover;
     position: absolute;
+    top: 220px;
     right: 0;
 }
 
 
 @media screen and (max-width: 768px){
 
+    .background{
+        height: calc(50% + 22px);
+    }
+
     .container{
-        padding: 20px;
+        padding: 38px 32px;
+    }
+
+    .logo{
+        width: 24px;
+        height: 24px;
     }
 
     .menu{
         display: block;
-        width: 32px;
-        height: 32px;
+        width: 24px;
+        height: 24px;
         outline: none;
         border: none;
         background-color: transparent;
@@ -157,9 +176,11 @@ h1{
     nav{
         display: none;
         position: absolute;
-        top: 75px;
-        width: 89%;
-        padding: 20px;
+        top: 100px;
+        width: calc(100% - 64px);
+        height: 233px;
+        padding: 26px;
+        gap: 25px;
         box-shadow: 0 0 20px hsl(230, 11%, 40%);
         text-align: center;
         flex-direction: column;
@@ -179,28 +200,43 @@ h1{
     main{
         grid-template-columns: 1fr;
         flex-direction: column-reverse;
+        padding-top: 26px;
+        overflow: hidden;
     }
     
     .w-50{
         width: 100%;
-        height: 55vh;
-        margin: 0;
-        padding-left: 20px;
+        height: 256px;
+        margin-top: 87px;
+        padding-left: 32px;
     }
 
+    .h1{
+        margin-top: 24px;
+    }
+    .h11{
+        margin-top: 12px;
+    }
     h1{
-        margin: 20px 0;
         font-size: 36px;
+        line-height: 70%;
+    }
+
+    .message{
+        margin-top: 27px;
     }
 
     .call-to-action{
-        margin-top: 20px;
+        margin-top: 29px;
+    }
+    .call-to-action a{
+        padding: 12px 24px;
     }
 
     .illustration{
         width: 100%;
-        height: 30vh;
-        margin-top: 20px;
+        height: 239px;
         position: static;
+        margin-left: 10px;
     }
 }
