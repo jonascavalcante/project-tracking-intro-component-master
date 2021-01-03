@@ -132,6 +132,7 @@ h1{
     color: white;
     background-color: hsl(0, 100%, 68%);
     border: none;
+    transition: 0.5s;
 }
 .call-to-action a:hover{
     background-color: hsla(0, 100%, 68%, 0.9);
@@ -152,11 +153,11 @@ h1{
 
 
 @media screen and (max-width: 768px){
-
+    
     .background{
         height: calc(50% + 22px);
     }
-
+    
     .container{
         padding: 38px 32px;
     }
@@ -177,7 +178,10 @@ h1{
     .open{
         width: 100%;
     }
-
+    .close{
+        display: none;
+    }
+    
     nav{
         display: none;
         position: absolute;
